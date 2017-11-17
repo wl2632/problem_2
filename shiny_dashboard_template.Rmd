@@ -1,0 +1,51 @@
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(janitor)
+library(stringr)
+library(forcats)
+library(viridis)
+library(shiny)
+library(plotly)
+library(tidyverse)
+
+set.seed(1)
+
+instacart = read_csv("./data/instacart_train_data.csv.zip") %>%
+  clean_names()
+
+```
+
+
+
+Column {.sidebar}
+-----------------------------------------------------------------------
+
+```{r}
+
+```
+
+
+Row
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+
+```
+
+Row {.tabset .tabset-fade}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
