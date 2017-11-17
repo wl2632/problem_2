@@ -3,7 +3,7 @@ title: "shiny_dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: row
-  runtime: shiny
+runtime: shiny
 ---
 
 ```{r setup, include=FALSE}
@@ -20,7 +20,6 @@ library(tidyverse)
 
 
 
-set.seed(1)
 
 instacart = read_csv("./data/instacart_train_data.csv.zip") %>%
   clean_names()
